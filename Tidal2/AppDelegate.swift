@@ -15,11 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0.25, green: 0.25, blue: 0.25, alpha: 1)
         
+        //MARK: Change navigation bar grey
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.25, green: 0.25, blue: 0.25, alpha: 1)
+        //MARK: Change status bar from dark to light(white)
         UIApplication.shared.statusBarStyle = .lightContent
         
-        
+        //MARK: Get access to the status bar to change the color of its background to black
         let statusBar = UIApplication.shared.value(forKey: "statusBar") as! UIView
         
         statusBar.backgroundColor = .black

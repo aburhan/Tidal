@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupHeader()
     }
+    //MARK: Add custom label to the navigation controller
     func setupHeader(){
         let bounds = navigationController?.navigationBar.bounds
         let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: (bounds?.width)!, height: (bounds?.height)!))
