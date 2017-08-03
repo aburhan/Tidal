@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70CB668A1F2FF24F00FD195D /* MyTidalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */; };
 		70D6EECC1F2E3056002D18BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D6EECB1F2E3056002D18BE /* AppDelegate.swift */; };
 		70D6EECE1F2E3056002D18BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D6EECD1F2E3056002D18BE /* ViewController.swift */; };
 		70D6EED11F2E3056002D18BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D6EECF1F2E3056002D18BE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTidalTabBarController.swift; sourceTree = "<group>"; };
 		70D6EEC81F2E3056002D18BE /* Tidal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tidal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D6EECB1F2E3056002D18BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D6EECD1F2E3056002D18BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				70D6EECB1F2E3056002D18BE /* AppDelegate.swift */,
 				70D6EECD1F2E3056002D18BE /* ViewController.swift */,
 				70D6EECF1F2E3056002D18BE /* Main.storyboard */,
+				70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */,
 				70D6EED21F2E3056002D18BE /* Assets.xcassets */,
 				70D6EED41F2E3056002D18BE /* LaunchScreen.storyboard */,
 				70D6EED71F2E3056002D18BE /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				70D6EECE1F2E3056002D18BE /* ViewController.swift in Sources */,
 				70D6EECC1F2E3056002D18BE /* AppDelegate.swift in Sources */,
+				70CB668A1F2FF24F00FD195D /* MyTidalTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				70D6EEDC1F2E3056002D18BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

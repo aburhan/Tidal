@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RPw-ty-sAr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4gZ-of-BHh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,22 +18,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.18972987210293635" green="1" blue="0.96346160563078531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="What's New" id="f9v-3x-qfR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+            <point key="canvasLocation" x="5172" y="283.80809595202402"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--What's New-->
         <scene sceneID="Es0-Jp-ju8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RPw-ty-sAr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="What's New" image="Home" selectedImage="Home" id="twb-4Z-DVP"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ukR-xK-Bjs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ukR-xK-Bjs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -44,7 +46,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIl-zK-jke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
+            <point key="canvasLocation" x="4376.8000000000002" y="283.80809595202402"/>
+        </scene>
+        <!--My Tidal Tab Bar Controller-->
+        <scene sceneID="Jq3-gZ-kET">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4gZ-of-BHh" customClass="MyTidalTabBarController" customModule="Tidal2" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="SgV-xH-d8H">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.043758490682550222" green="0.90861319546575403" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RPw-ty-sAr" kind="relationship" relationship="viewControllers" id="7g2-y3-ueP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehG-A9-Ly3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3437.5999999999999" y="283.80809595202402"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home" width="36" height="36"/>
+    </resources>
 </document>
