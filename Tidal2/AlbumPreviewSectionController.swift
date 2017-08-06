@@ -11,16 +11,21 @@ import IGListKit
 
 class AlbumPreviewSectionController: ListSectionController, UIScrollViewDelegate{
     
+    //MARK: images for scrollview
     fileprivate let albumsArray = ["album_display","album_display2","album_display","album_display2"]
+    
     var pageControl = UIPageControl()
     
+    //MARK: Telling the adapter how big the cell will be
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 160)
     }
+    //MARK: Configuring the cell, adding photos
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard let cell = collectionContext?.dequeueReusableCell(withNibName: "AlbumPreviewCellCollectionViewCell", bundle: nil, for: self, at: index) as? AlbumPreviewCellCollectionViewCell
             else{fatalError()}
         
+        //MARK: controls the little blue dots
         cell.pageControl.numberOfPages = albumsArray.count/2
         pageControl = cell.pageControl
         
@@ -30,10 +35,13 @@ class AlbumPreviewSectionController: ListSectionController, UIScrollViewDelegate
         let height = cell.albumScrollView.frame.height
         
         cell.albumScrollView.contentSize = CGSize(width: collectionContext!.containerSize.width * CGFloat(albumsArray.count), height: height)
+        
+        //MARK: no horizontal, vertical or bounce (These can also be configured in storyboard
         cell.albumScrollView.showsHorizontalScrollIndicator = false
         cell.albumScrollView.showsVerticalScrollIndicator = false
         cell.albumScrollView.bounces = false
         
+    
         for i in 0..<albumsArray.count{
             let imageView = UIImageView()
             imageView.image = UIImage(imageLiteralResourceName: albumsArray[i])

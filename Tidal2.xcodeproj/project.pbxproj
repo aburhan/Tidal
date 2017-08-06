@@ -56,6 +56,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70A02B3B1F37A94500B73318 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D6EECB1F2E3056002D18BE /* AppDelegate.swift */,
+				70D6EECF1F2E3056002D18BE /* Main.storyboard */,
+				70D6EED21F2E3056002D18BE /* Assets.xcassets */,
+				70D6EED41F2E3056002D18BE /* LaunchScreen.storyboard */,
+				70D6EED71F2E3056002D18BE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70A02B3C1F37A95A00B73318 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70A02B3D1F37A96200B73318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */,
+				70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70A02B3E1F37A97000B73318 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70D6EECD1F2E3056002D18BE /* ViewController.swift */,
+				70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */,
+				70A02B3F1F37A97900B73318 /* Section Controller */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		70A02B3F1F37A97900B73318 /* Section Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */,
+			);
+			name = "Section Controller";
+			sourceTree = "<group>";
+		};
 		70D6EEBF1F2E3056002D18BE = {
 			isa = PBXGroup;
 			children = (
@@ -77,16 +123,10 @@
 		70D6EECA1F2E3056002D18BE /* Tidal2 */ = {
 			isa = PBXGroup;
 			children = (
-				70D6EECB1F2E3056002D18BE /* AppDelegate.swift */,
-				70D6EECD1F2E3056002D18BE /* ViewController.swift */,
-				70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */,
-				70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */,
-				70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */,
-				70D6EECF1F2E3056002D18BE /* Main.storyboard */,
-				70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */,
-				70D6EED21F2E3056002D18BE /* Assets.xcassets */,
-				70D6EED41F2E3056002D18BE /* LaunchScreen.storyboard */,
-				70D6EED71F2E3056002D18BE /* Info.plist */,
+				70A02B3E1F37A97000B73318 /* Controller */,
+				70A02B3D1F37A96200B73318 /* View */,
+				70A02B3C1F37A95A00B73318 /* Model */,
+				70A02B3B1F37A94500B73318 /* Supporting Files */,
 			);
 			path = Tidal2;
 			sourceTree = "<group>";
