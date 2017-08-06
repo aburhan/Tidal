@@ -15,10 +15,10 @@ class AlbumPreviewSectionController: ListSectionController, UIScrollViewDelegate
     fileprivate let albumsArray = ["album_display","album_display2","album_display","album_display2"]
     
     var pageControl = UIPageControl()
-    
+    let screenSize = UIScreen.main.bounds
     //MARK: Telling the adapter how big the cell will be
     override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext!.containerSize.width, height: 160)
+        return CGSize(width: screenSize.width, height: 160)
     }
     //MARK: Configuring the cell, adding photos
     override func cellForItem(at index: Int) -> UICollectionViewCell {
@@ -34,7 +34,7 @@ class AlbumPreviewSectionController: ListSectionController, UIScrollViewDelegate
         
         let height = cell.albumScrollView.frame.height
         
-        cell.albumScrollView.contentSize = CGSize(width: collectionContext!.containerSize.width * CGFloat(albumsArray.count), height: height)
+        cell.albumScrollView.contentSize = CGSize(width: screenSize.width, height: height)
         
         //MARK: no horizontal, vertical or bounce (These can also be configured in storyboard
         cell.albumScrollView.showsHorizontalScrollIndicator = false

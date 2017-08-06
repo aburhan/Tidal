@@ -12,21 +12,24 @@ import IGListKit
 class ViewController: UIViewController, ListAdapterDataSource{
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var data: [Any] = [1]
+    let tidalData = TidalData()
+    var data: [Any] = []
     lazy var adapter: ListAdapter = {
          return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        data = tidalData.getData()
         setupHeader()
-        adapter.collectionView = collectionView
-        adapter.dataSource = self
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        adapter.collectionView = collectionView
+        adapter.dataSource = self
     }
+
     //MARK: Add custom label to the navigation controller
     func setupHeader(){
         let bounds = navigationController?.navigationBar.bounds
@@ -43,7 +46,13 @@ class ViewController: UIViewController, ListAdapterDataSource{
     }
 
     public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController{
-        return AlbumPreviewSectionController()
+        switch object{
+        case is Header:
+            return HeaderSectionController()
+        default:
+            return AlbumPreviewSectionController()
+        }
+        
     }
 
     public func emptyView(for listAdapter: ListAdapter) -> UIView?{
