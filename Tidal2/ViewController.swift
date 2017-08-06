@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import IGListKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ListAdapterDataSource{
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    var data: [Any] = [1]
+    lazy var adapter: ListAdapter = {
+         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHeader()
+        adapter.collectionView = collectionView
+        adapter.dataSource = self
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
     //MARK: Add custom label to the navigation controller
     func setupHeader(){
@@ -25,5 +38,18 @@ class ViewController: UIViewController {
         navigationItem.titleView = headerLabel
         
     }
+    public func objects(for listAdapter: ListAdapter) -> [ListDiffable]{
+        return data as! [ListDiffable]
+    }
+
+    public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController{
+        return AlbumPreviewSectionController()
+    }
+
+    public func emptyView(for listAdapter: ListAdapter) -> UIView?{
+        return nil
+    }
+
+    
 }
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3BAB62B74EB0DC62C4D783 /* Pods_Tidal2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F72BC2E742A396DE413AAF2 /* Pods_Tidal2.framework */; };
+		70A02B361F3790EA00B73318 /* AlbumPreviewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */; };
+		70A02B391F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */; };
+		70A02B3A1F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */; };
 		70CB668A1F2FF24F00FD195D /* MyTidalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */; };
 		70D6EECC1F2E3056002D18BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D6EECB1F2E3056002D18BE /* AppDelegate.swift */; };
 		70D6EECE1F2E3056002D18BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D6EECD1F2E3056002D18BE /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F72BC2E742A396DE413AAF2 /* Pods_Tidal2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tidal2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPreviewSectionController.swift; sourceTree = "<group>"; };
+		70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPreviewCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumPreviewCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTidalTabBarController.swift; sourceTree = "<group>"; };
 		70D6EEC81F2E3056002D18BE /* Tidal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tidal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D6EECB1F2E3056002D18BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		70D6EED21F2E3056002D18BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D6EED51F2E3056002D18BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D6EED71F2E3056002D18BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720FEA4475B28A2E54A75E7D /* Pods-Tidal2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tidal2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tidal2/Pods-Tidal2.release.xcconfig"; sourceTree = "<group>"; };
+		934B113A45044062EE5C2EB4 /* Pods-Tidal2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tidal2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tidal2/Pods-Tidal2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3BAB62B74EB0DC62C4D783 /* Pods_Tidal2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308A325C9F80EDA201FBF8C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F72BC2E742A396DE413AAF2 /* Pods_Tidal2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70D6EEBF1F2E3056002D18BE = {
 			isa = PBXGroup;
 			children = (
 				70D6EECA1F2E3056002D18BE /* Tidal2 */,
 				70D6EEC91F2E3056002D18BE /* Products */,
+				EDA36904255B77FA01E4CDF6 /* Pods */,
+				308A325C9F80EDA201FBF8C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +79,9 @@
 			children = (
 				70D6EECB1F2E3056002D18BE /* AppDelegate.swift */,
 				70D6EECD1F2E3056002D18BE /* ViewController.swift */,
+				70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */,
+				70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */,
+				70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */,
 				70D6EECF1F2E3056002D18BE /* Main.storyboard */,
 				70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */,
 				70D6EED21F2E3056002D18BE /* Assets.xcassets */,
@@ -67,6 +91,15 @@
 			path = Tidal2;
 			sourceTree = "<group>";
 		};
+		EDA36904255B77FA01E4CDF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				934B113A45044062EE5C2EB4 /* Pods-Tidal2.debug.xcconfig */,
+				720FEA4475B28A2E54A75E7D /* Pods-Tidal2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70D6EEDA1F2E3056002D18BE /* Build configuration list for PBXNativeTarget "Tidal2" */;
 			buildPhases = (
+				0C0EC24F7FE772E80B5E7A8A /* [CP] Check Pods Manifest.lock */,
 				70D6EEC41F2E3056002D18BE /* Sources */,
 				70D6EEC51F2E3056002D18BE /* Frameworks */,
 				70D6EEC61F2E3056002D18BE /* Resources */,
+				9B1FC4E04C2D1E45AD247529 /* [CP] Embed Pods Frameworks */,
+				2ECF258F41507271B7FE31EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +163,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D6EED61F2E3056002D18BE /* LaunchScreen.storyboard in Resources */,
+				70A02B3A1F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib in Resources */,
 				70D6EED31F2E3056002D18BE /* Assets.xcassets in Resources */,
 				70D6EED11F2E3056002D18BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C0EC24F7FE772E80B5E7A8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tidal2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ECF258F41507271B7FE31EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tidal2/Pods-Tidal2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B1FC4E04C2D1E45AD247529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tidal2/Pods-Tidal2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tidal2/Pods-Tidal2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70D6EEC41F2E3056002D18BE /* Sources */ = {
@@ -141,6 +232,8 @@
 			files = (
 				70D6EECE1F2E3056002D18BE /* ViewController.swift in Sources */,
 				70D6EECC1F2E3056002D18BE /* AppDelegate.swift in Sources */,
+				70A02B361F3790EA00B73318 /* AlbumPreviewSectionController.swift in Sources */,
+				70A02B391F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift in Sources */,
 				70CB668A1F2FF24F00FD195D /* MyTidalTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +357,7 @@
 		};
 		70D6EEDB1F2E3056002D18BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934B113A45044062EE5C2EB4 /* Pods-Tidal2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tidal2/Info.plist;
@@ -276,6 +370,7 @@
 		};
 		70D6EEDC1F2E3056002D18BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720FEA4475B28A2E54A75E7D /* Pods-Tidal2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tidal2/Info.plist;
