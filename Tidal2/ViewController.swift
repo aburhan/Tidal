@@ -49,8 +49,14 @@ class ViewController: UIViewController, ListAdapterDataSource{
         switch object{
         case is Header:
             return HeaderSectionController()
-        default:
+        case is Track:
+            return TrackSectionController()
+        case is AlbumPreviews:
             return AlbumPreviewSectionController()
+        case is String:
+            return AlbumSectionController()
+        default:
+            return ButtonSectionController()
         }
         
     }

@@ -24,6 +24,9 @@
 		7015A2CC1F37D306003DE995 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2CB1F37D306003DE995 /* Album.swift */; };
 		7015A2CE1F37D329003DE995 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2CD1F37D329003DE995 /* AlbumViewModel.swift */; };
 		7015A2D01F37D5B2003DE995 /* HeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2CF1F37D5B2003DE995 /* HeaderSectionController.swift */; };
+		7015A2D21F38FDBB003DE995 /* TrackSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2D11F38FDBB003DE995 /* TrackSectionController.swift */; };
+		7015A2D41F390066003DE995 /* AlbumSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2D31F390066003DE995 /* AlbumSectionController.swift */; };
+		7015A2D61F3901FC003DE995 /* ButtonSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2D51F3901FC003DE995 /* ButtonSectionController.swift */; };
 		70A02B361F3790EA00B73318 /* AlbumPreviewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */; };
 		70A02B391F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */; };
 		70A02B3A1F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */; };
@@ -53,6 +56,9 @@
 		7015A2CB1F37D306003DE995 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		7015A2CD1F37D329003DE995 /* AlbumViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		7015A2CF1F37D5B2003DE995 /* HeaderSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionController.swift; sourceTree = "<group>"; };
+		7015A2D11F38FDBB003DE995 /* TrackSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackSectionController.swift; sourceTree = "<group>"; };
+		7015A2D31F390066003DE995 /* AlbumSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumSectionController.swift; sourceTree = "<group>"; };
+		7015A2D51F3901FC003DE995 /* ButtonSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSectionController.swift; sourceTree = "<group>"; };
 		70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPreviewSectionController.swift; sourceTree = "<group>"; };
 		70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPreviewCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumPreviewCellCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -153,6 +159,9 @@
 			children = (
 				70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */,
 				7015A2CF1F37D5B2003DE995 /* HeaderSectionController.swift */,
+				7015A2D11F38FDBB003DE995 /* TrackSectionController.swift */,
+				7015A2D31F390066003DE995 /* AlbumSectionController.swift */,
+				7015A2D51F3901FC003DE995 /* ButtonSectionController.swift */,
 			);
 			name = "Section Controller";
 			sourceTree = "<group>";
@@ -332,6 +341,7 @@
 			files = (
 				7015A2C61F37D150003DE995 /* AlbumPreviews.swift in Sources */,
 				7015A2C81F37D2D2003DE995 /* Header.swift in Sources */,
+				7015A2D21F38FDBB003DE995 /* TrackSectionController.swift in Sources */,
 				7015A2C41F37CF8B003DE995 /* TidalData.swift in Sources */,
 				70D6EECE1F2E3056002D18BE /* ViewController.swift in Sources */,
 				70D6EECC1F2E3056002D18BE /* AppDelegate.swift in Sources */,
@@ -346,6 +356,8 @@
 				7015A2CE1F37D329003DE995 /* AlbumViewModel.swift in Sources */,
 				70CB668A1F2FF24F00FD195D /* MyTidalTabBarController.swift in Sources */,
 				7015A2CA1F37D2EA003DE995 /* Track.swift in Sources */,
+				7015A2D61F3901FC003DE995 /* ButtonSectionController.swift in Sources */,
+				7015A2D41F390066003DE995 /* AlbumSectionController.swift in Sources */,
 				7015A2CC1F37D306003DE995 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
