@@ -63,7 +63,5 @@ class AlbumPreviewSectionController: ListSectionController, UIScrollViewDelegate
         let page = scrollView.contentOffset.x/(scrollView.frame.size.width/CGFloat(albumsArray.count))
         pageControl.currentPage = Int(page)
     }
-    override func didUpdate(to object: Any) {
-        
-    }
+
 }
