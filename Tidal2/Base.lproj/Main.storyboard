@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="5172" y="283.80809595202402"/>
         </scene>
-        <!--View Controller-->
+        <!--Music Player View Controller-->
         <scene sceneID="pLe-D5-aSB">
             <objects>
-                <viewController id="3pU-Wo-w8h" sceneMemberID="viewController">
+                <viewController id="3pU-Wo-w8h" customClass="MusicPlayerViewController" customModule="Tidal2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TpI-3b-6aN"/>
                         <viewControllerLayoutGuide type="bottom" id="4nH-Tx-uGi"/>
@@ -66,6 +66,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="albumImage" destination="dab-Iq-Ikh" id="640-Yo-LnM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytS-38-1s5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

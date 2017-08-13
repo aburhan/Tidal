@@ -27,6 +27,7 @@
 		7015A2D21F38FDBB003DE995 /* TrackSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2D11F38FDBB003DE995 /* TrackSectionController.swift */; };
 		7015A2D41F390066003DE995 /* AlbumSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2D31F390066003DE995 /* AlbumSectionController.swift */; };
 		7015A2D61F3901FC003DE995 /* ButtonSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015A2D51F3901FC003DE995 /* ButtonSectionController.swift */; };
+		7045C4A61F410E4900B11D84 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045C4A51F410E4900B11D84 /* MusicPlayerViewController.swift */; };
 		70A02B361F3790EA00B73318 /* AlbumPreviewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */; };
 		70A02B391F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */; };
 		70A02B3A1F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */; };
@@ -59,6 +60,7 @@
 		7015A2D11F38FDBB003DE995 /* TrackSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackSectionController.swift; sourceTree = "<group>"; };
 		7015A2D31F390066003DE995 /* AlbumSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumSectionController.swift; sourceTree = "<group>"; };
 		7015A2D51F3901FC003DE995 /* ButtonSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSectionController.swift; sourceTree = "<group>"; };
+		7045C4A51F410E4900B11D84 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		70A02B351F3790EA00B73318 /* AlbumPreviewSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPreviewSectionController.swift; sourceTree = "<group>"; };
 		70A02B371F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPreviewCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		70A02B381F37A22E00B73318 /* AlbumPreviewCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumPreviewCellCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				70D6EECD1F2E3056002D18BE /* ViewController.swift */,
 				70CB66891F2FF24F00FD195D /* MyTidalTabBarController.swift */,
+				7045C4A51F410E4900B11D84 /* MusicPlayerViewController.swift */,
 				70A02B3F1F37A97900B73318 /* Section Controller */,
 			);
 			name = Controller;
@@ -349,6 +352,7 @@
 				7015A2D01F37D5B2003DE995 /* HeaderSectionController.swift in Sources */,
 				7015A2BC1F37CF5B003DE995 /* HeaderViewCell.swift in Sources */,
 				7015A2BE1F37CF5B003DE995 /* TrackViewCell.swift in Sources */,
+				7045C4A61F410E4900B11D84 /* MusicPlayerViewController.swift in Sources */,
 				7015A2B81F37CF5B003DE995 /* AlbumViewCell.swift in Sources */,
 				70A02B361F3790EA00B73318 /* AlbumPreviewSectionController.swift in Sources */,
 				7015A2C31F37CF8B003DE995 /* AlbumsData.swift in Sources */,
